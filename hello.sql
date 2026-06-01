@@ -1,0 +1,56 @@
+CREATE TABLE TRAVEL_PACKAGES (
+    PACKAGE_ID VARCHAR(10) PRIMARY KEY,
+    PACKAGE_NAME VARCHAR(100),
+    DESTINATION VARCHAR(100),
+    PRICE INT
+);
+
+CREATE TABLE BOOKINGS (
+    BOOKING_ID VARCHAR(10) PRIMARY KEY,
+    PACKAGE_ID VARCHAR(10),
+    CUSTOMER_ID VARCHAR(10),
+    BOOKING_DATE DATE,
+    NUMBER_OF_TICKETS INT,
+    
+    FOREIGN KEY (PACKAGE_ID) REFERENCES TRAVEL_PACKAGES(PACKAGE_ID)
+);
+CREATE TABLE CUSTOMERS (
+    CUSTOMER_ID VARCHAR(10) PRIMARY KEY,
+    CUSTOMER_NAME VARCHAR(100),
+    AGE INT,
+    CITY VARCHAR(100)
+);
+
+INSERT INTO TRAVEL_PACKAGES 
+(PACKAGE_ID, PACKAGE_NAME, DESTINATION, PRICE)
+VALUES
+('PKG1', 'Exotic Beach', 'Bali', 1500),
+('PKG2', 'Mountain Adventure', 'Nepal', 1200),
+('PKG3', 'City Lights', 'Paris', 1800),
+('PKG4', 'Desert Safari', 'Dubai', 1600),
+('PKG5', 'Cultural Tour', 'Tokyo', 1400);
+
+INSERT INTO BOOKINGS
+(BOOKING_ID, PACKAGE_ID, CUSTOMER_ID, BOOKING_DATE, NUMBER_OF_TICKETS)
+VALUES
+('B1', 'PKG1', 'C1', '2024-01-15', 2),
+('B2', 'PKG1', 'C2', '2024-02-20', 1),
+('B3', 'PKG2', 'C3', '2024-03-10', 3),
+('B4', 'PKG3', 'C4', '2024-04-25', 1),
+('B5', 'PKG4', 'C5', '2024-05-30', 4),
+('B6', 'PKG5', 'C1', '2024-06-15', 2),
+('B7', 'PKG2', 'C2', '2024-07-10', 1),
+('B8', 'PKG3', 'C3', '2024-08-05', 2),
+('B9', 'PKG4', 'C4', '2024-09-20', 3),
+('B10', 'PKG5', 'C5', '2024-10-25', 1);
+
+INSERT INTO CUSTOMERS
+(CUSTOMER_ID, CUSTOMER_NAME, AGE, CITY)
+VALUES
+('C1', 'John Doe', 30, 'New York'),
+('C2', 'Jane Smith', 25, 'Los Angeles'),
+('C3', 'Alice Brown', 35, 'Chicago'),
+('C4', 'Bob Johnson', 28, 'Houston'),
+('C5', 'Carol White', 40, 'San Francisco');
+
+select * from BOOKINGS ;
