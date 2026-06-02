@@ -178,13 +178,17 @@ INSERT INTO EMPLOYEES VALUES
 /*--------------------------------------------------
 3. Find customers from New York
 --------------------------------------------------*/
-select CUSTOMER_NAME from customers where city ='New York';
+
+
+--select CUSTOMER_NAME from customers where city ='New York';
+
+
 
 /*--------------------------------------------------
 4. Find customers age greater than 23
 --------------------------------------------------*/
 
-
+select CUSTOMER_NAME from customers where age=
 /*--------------------------------------------------
 5. Find customers age between 20 and 25
 --------------------------------------------------*/
