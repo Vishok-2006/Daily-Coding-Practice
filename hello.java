@@ -13,7 +13,7 @@ class Main {
     public static int out( int y){
          Set<Integer> l=new HashSet<>();
        l.add(0);
-       for(int i=0;i<=y;i++){
+       for(int i=0;i<y;i++){
            Set<Integer> t=new HashSet<>();
            for(int k:l){
                t.add(k+3);
