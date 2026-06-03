@@ -1,5 +1,5 @@
  import java.util.*;
-public class second {
+public class Casecount {
    
 
     public static void main(String[] args) {
