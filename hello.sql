@@ -188,10 +188,19 @@ INSERT INTO EMPLOYEES VALUES
 4. Find customers age greater than 23
 --------------------------------------------------*/
 
-select CUSTOMER_NAME from customers where age=
+
+
+--select CUSTOMER_NAME from customers where age>23;
+
+
+
 /*--------------------------------------------------
 5. Find customers age between 20 and 25
 --------------------------------------------------*/
+
+
+--select CUSTOMER_NAME from customers where age between 20 and 25;
+
 
 
 /*--------------------------------------------------
@@ -199,9 +208,17 @@ select CUSTOMER_NAME from customers where age=
 --------------------------------------------------*/
 
 
+
+--select DISTINCT city from customers;
+
+
+
 /*--------------------------------------------------
 7. Find customers whose name starts with 'R'
 --------------------------------------------------*/
+
+
+--select CUSTOMER_NAME from customers where CUSTOMER_NAME like 'R%';
 
 
 /*--------------------------------------------------
@@ -209,9 +226,15 @@ select CUSTOMER_NAME from customers where age=
 --------------------------------------------------*/
 
 
+--select CUSTOMER_NAME from customers order by age ;
+
+
 /*--------------------------------------------------
 9. Display first 5 customers
 --------------------------------------------------*/
+
+
+--select CUSTOMER_NAME from customers limit 5;
 
 
 /*--------------------------------------------------
@@ -219,9 +242,15 @@ select CUSTOMER_NAME from customers where age=
 --------------------------------------------------*/
 
 
+--select count(CUSTOMER_NAME) from customers;
+
+
 /*--------------------------------------------------
 11. Find maximum ticket price
 --------------------------------------------------*/
+
+
+--select max(NUMBER_OF_TICKETS) from bookings;
 
 
 /*--------------------------------------------------
@@ -229,14 +258,25 @@ select CUSTOMER_NAME from customers where age=
 --------------------------------------------------*/
 
 
+--select min(salary) from employees;
+
+
 /*--------------------------------------------------
 13. Find average customer age
 --------------------------------------------------*/
 
 
+--select avg(age) from customers GROUP by CUSTOMER_NAME;
+
+--select avg(age) from customers;
+
+
 /*--------------------------------------------------
 14. Find total payment amount
 --------------------------------------------------*/
+
+
+select 
 
 
 /*--------------------------------------------------
