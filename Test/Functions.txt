@@ -1,0 +1,250 @@
+// ======================= ARRAYS (java.util.Arrays) =======================
+
+import java.util.Arrays;
+
+int[] arr = {5, 2, 9, 1, 7};
+
+// Sorting
+Arrays.sort(arr);
+
+// Convert to String
+Arrays.toString(arr);
+
+// Compare arrays
+Arrays.equals(arr1, arr2);
+
+// Fill array with value
+Arrays.fill(arr, 10);
+
+// Copy array
+Arrays.copyOf(arr, 5);
+
+// Copy range
+Arrays.copyOfRange(arr, 1, 4);
+
+// Binary Search (array must be sorted)
+Arrays.binarySearch(arr, 7);
+
+// Deep String conversion (2D array)
+Arrays.deepToString(arr2D);
+
+// Deep equals (2D array compare)
+Arrays.deepEquals(arr2D1, arr2D2);
+
+// Set all elements
+Arrays.setAll(arr, i -> i * 2);
+
+// Parallel sort
+Arrays.parallelSort(arr);
+
+// Stream conversion
+Arrays.stream(arr);
+
+// Mismatch index
+Arrays.mismatch(arr1, arr2);
+
+
+// ======================= ARRAY METHODS / PROPERTIES =======================
+
+// Length
+arr.length
+
+// Access
+arr[0]
+
+// Update
+arr[0] = 100;
+
+
+// ======================= STRING METHODS =======================
+
+String s = " Hello Java ";
+
+// Length
+s.length();
+
+// Character at index
+s.charAt(0);
+
+// Substring
+s.substring(2);
+s.substring(2, 5);
+
+// Contains
+s.contains("Java");
+
+// Equality
+s.equals("Hello");
+s.equalsIgnoreCase("hello");
+
+// Convert case
+s.toUpperCase();
+s.toLowerCase();
+
+// Remove spaces
+s.trim();
+
+// Replace
+s.replace('a', 'x');
+s.replace("Java", "Python");
+
+// Split
+s.split(" ");
+
+// Find index
+s.indexOf('a');
+s.indexOf("Java");
+
+// Last index
+s.lastIndexOf('a');
+
+// Empty check
+s.isEmpty();
+
+// Blank check (Java 11+)
+s.isBlank();
+
+// Concatenate
+s.concat(" Programming");
+
+// Starts / Ends with
+s.startsWith("Hello");
+s.endsWith("Java");
+
+// Compare lexicographically
+s.compareTo("ABC");
+
+// Repeat string (Java 11+)
+s.repeat(3);
+
+// Convert to char array
+s.toCharArray();
+
+// Get bytes
+s.getBytes();
+
+// Join strings
+String.join("-", "A", "B", "C");
+
+// ValueOf
+String.valueOf(123);
+
+// Matches regex
+s.matches("[A-Za-z ]+");
+
+// Replace all regex
+s.replaceAll("\\s", "");
+
+// Replace first match
+s.replaceFirst("a", "x");
+
+// Intern string
+s.intern();
+
+// Strip spaces (Java 11+)
+s.strip();
+s.stripLeading();
+s.stripTrailing();
+
+// Lines (Java 11+)
+s.lines();
+
+// Code point methods
+s.codePointAt(0);
+s.codePointBefore(1);
+s.codePointCount(0, s.length());
+
+// Region match
+s.regionMatches(true, 0, "hello", 0, 5);
+
+// Internally compare
+s.contentEquals("Hello");
+
+// Get chars
+s.getChars(0, 5, charArray, 0);
+
+
+// ======================= STRINGBUILDER METHODS =======================
+
+StringBuilder sb = new StringBuilder("Hello");
+
+// Append
+sb.append(" World");
+
+// Insert
+sb.insert(2, "ABC");
+
+// Replace
+sb.replace(0, 5, "Java");
+
+// Delete
+sb.delete(0, 2);
+
+// Delete character
+sb.deleteCharAt(2);
+
+// Reverse
+sb.reverse();
+
+// Length
+sb.length();
+
+// Capacity
+sb.capacity();
+
+// Character at index
+sb.charAt(0);
+
+// Set char
+sb.setCharAt(0, 'X');
+
+// Substring
+sb.substring(2);
+sb.substring(1, 5);
+
+// Index of
+sb.indexOf("lo");
+
+// Last index of
+sb.lastIndexOf("l");
+
+// Ensure capacity
+sb.ensureCapacity(50);
+
+// Trim capacity
+sb.trimToSize();
+
+// Convert to String
+sb.toString();
+
+// Append code point
+sb.appendCodePoint(65);
+
+// Get chars
+sb.getChars(0, 5, charArray, 0);
+
+// Set length
+sb.setLength(3);
+
+// Compare (Java 11+)
+sb.compareTo(new StringBuilder("Hello"));
+
+// Offset by code points
+sb.offsetByCodePoints(0, 2);
+
+// Code points
+sb.codePointAt(0);
+sb.codePointBefore(1);
+sb.codePointCount(0, sb.length());
+
+// Unicode append
+sb.append('\u0041');
+
+// Empty StringBuilder
+StringBuilder sb2 = new StringBuilder();
+
+// Initial capacity
+StringBuilder sb3 = new StringBuilder(50);
+
+// From String
+StringBuilder sb4 = new StringBuilder("Java");
