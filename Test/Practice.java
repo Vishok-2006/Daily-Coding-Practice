@@ -465,14 +465,14 @@ public static void main(String[] args){
 // ===========================
 
 
-int n=sc.nextInt();
-int [] arr= new int[n];
-for(int i=0;i<n;i++){
-    arr[i]=sc.nextInt();
-}
-int [] s= new int[n];
-Arrays.sort(arr);
-System.out.println(arr[n-2]);
+// int n=sc.nextInt();
+// int [] arr= new int[n];
+// for(int i=0;i<n;i++){
+//     arr[i]=sc.nextInt();
+// }
+// int [] s= new int[n];
+// Arrays.sort(arr);
+// System.out.println(arr[n-2]);
 
 
 
