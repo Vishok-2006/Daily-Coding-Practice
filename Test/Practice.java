@@ -207,7 +207,14 @@ public static void main(String[] args){
 // ===========================
 
 
+// String s=sc.nextLine();
+// int n=s.length();
+// String [] str=s.split(".");
 
+// String [] w= new String[str.length];
+// for(int i=0;i<str.length;i++){
+ 
+// }
 
 
 
@@ -331,8 +338,13 @@ public static void main(String[] args){
 // ===========================
 
 
+// String s=sc.nextLine();
+// char [] arr=s.toCharArray();
+// for(int i=0;i<arr.length;i++){
+//     arr[i]=(char)('z'-(arr[i]-'a'));
+// }
 
-
+// System.out.print(arr);
 
 
 
@@ -363,8 +375,25 @@ public static void main(String[] args){
 // ===========================
 
 
+// String s=sc.nextLine();
+// int n=s.length();
+// // StringBuilder sb=new StringBuilder();
+// // for (int i=1;i<n-1;i++){
+// //     if(s.charAt(i)==s.charAt(i+1)){
+// //         sb.append(s.charAt(i+1));
+// //         continue;
+// //     }
+// //     else{
+// //         sb.append(s.charAt(i));
+// //     }
 
-
+// // }
+// // System.out.println(sb.toString());
+// Set<Character> sb=new LinkedHashSet<>();
+// for(char a:s.toCharArray()){
+//     sb.add(a);
+// }
+// System.out.println(sb.toString());
 
 
 
@@ -402,8 +431,13 @@ public static void main(String[] args){
 
 
 
+// String s=sc.nextLine();
+// Map<Character,Integer> sb=new LinkedHashMap<>();
+// for(int i=0;i<s.length();i++){
+//     sb.put(s.charAt(i),sb.getOrDefault(s.charAt(i),0)+1);
+// }
 
-
+// System.out.print(sb.toString());
 
 
 
@@ -431,6 +465,14 @@ public static void main(String[] args){
 // ===========================
 
 
+int n=sc.nextInt();
+int [] arr= new int[n];
+for(int i=0;i<n;i++){
+    arr[i]=sc.nextInt();
+}
+int [] s= new int[n];
+Arrays.sort(arr);
+System.out.println(arr[n-2]);
 
 
 
@@ -468,8 +510,22 @@ public static void main(String[] args){
 
 
 
-
-
+// int n=sc.nextInt();
+// int arr[]=new int[n];
+// for(int i=0;i<n;i++){
+//     arr[i]=sc.nextInt();
+// }
+// int c=0;
+// for(int i=0;i<n;i++){
+//     if(arr[i]==i+1){
+//         continue;
+//     }
+//     else {
+//         c=i+1;
+//         break;
+//     }
+// }
+// System.out.println(c);
 
 
 
@@ -510,7 +566,28 @@ public static void main(String[] args){
 // ===========================
 
 
-
+// int n=sc.nextInt();
+// int[] s=new int[n];
+// int m[]=new int[n];
+// for(int i=0;i<n;i++){
+//     s[i]=sc.nextInt();
+// }
+// for(int i=0;i<n;i++){
+//     m[i]=sc.nextInt();
+// }
+// int avg=0;
+// int amt=0;
+// for(int i=0;i<n;i++){
+//     avg+=s[i];
+// }
+// avg=avg/n;
+// for(int i=0;i<n;i++){
+//     if(s[i]<avg){
+//       amt+=m[i];
+//     }
+// }
+// System.out.println(amt);
+// System.out.println(avg);
 
 
 
@@ -597,8 +674,20 @@ public static void main(String[] args){
 // ===========================
 
 
-
-
+// int n=sc.nextInt();
+// Set<Integer> s=new LinkedHashSet<>();
+// s.add(0);
+// for(int i=0;i<n;i++){
+//     Set<Integer> t=new LinkedHashSet<>();
+// for(int j:s){
+    
+//     t.add(j+3);
+//     t.add(j*2);
+   
+// }
+//  s=t;
+// }
+// System.out.println(s.size());
 
 
 
@@ -630,9 +719,24 @@ public static void main(String[] args){
 
 // ===========================
 
+// int n=sc.nextInt();
+// int [] arr=new int[n];
+// for(int i=0;i<n;i++){
+//     arr[i]=sc.nextInt();
+// }
+// StringBuilder num=new StringBuilder();
+// StringBuilder z =new StringBuilder();
+// for (int i=0;i<n;i++){
+//   if(arr[i]==0){
+//     z.append(arr[i]);
+//   }
+//   else{
+//      num.append(arr[i]);
+//   }
+// }
 
-
-
+// num.append(z);
+// System.out.println(num.toString());
 
 
 
@@ -657,8 +761,19 @@ public static void main(String[] args){
 // ===========================
 
 
-
-
+// int n=sc.nextInt();
+// int [] arr=new int[n];
+// for(int i=0;i<n;i++){
+//     arr[i]=sc.nextInt();
+// }
+// int k=sc.nextInt();
+// int [] t=new int[n];
+// for(int i=0;i<n;i++){
+//     t[i]=arr[(i+k)%n];
+// }
+// for(int i :t){
+// System.out.print(i);
+// }
 
 
 

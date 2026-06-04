@@ -22,7 +22,7 @@ class Sentence {
 
            }
 
-           String[] words = se.split("\\s+");
+           String[] words = se.split("\\s+ ");
 
            if(words.length<5)
 
