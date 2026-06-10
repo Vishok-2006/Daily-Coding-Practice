@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class Changoingstring {
     public static void main(String[] args) {
         String s="ABC120PME0000LZ3MB1Y3C45";

@@ -7,7 +7,7 @@ public class kilogram {
        int y=sc.nextInt();
        int n=out(y);
        System.out.println(n);
-       
+       sc.close();
     }
     
     public static int out( int y){
@@ -22,6 +22,6 @@ public class kilogram {
            l=t;
        }
        return l.size();
-       
+    
     }
 }

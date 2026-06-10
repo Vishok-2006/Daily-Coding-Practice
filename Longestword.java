@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class Longestword {
     public static void main(String[] args) {
         String s="Apple Banana orange umberlla orangefactorys";

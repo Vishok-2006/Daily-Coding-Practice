@@ -6,8 +6,8 @@ public class Electricitycalculation {
         int[] fri={15,15,20};
         int[] wm={5,10,5};
         int[] fan={10,5,5};
-        double total
-        StringBuilder sb=new StringBuilder();
+        double total=0;
+        // StringBuilder sb=new StringBuilder();
         double [] t=new double [d];
         for(int i=0;i<d;i++){
             t[0]+=ac[i];
