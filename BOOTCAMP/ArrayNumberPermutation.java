@@ -1,4 +1,3 @@
-package BOOTCAMP;
 
 import java.util.*;
 
