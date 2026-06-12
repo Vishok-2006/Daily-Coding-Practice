@@ -10,4 +10,25 @@ public class ZigZag {
         }
         int cr=0;
         boolean m=false;
-        
+        for(char c: s.toCharArray()){
+            sb[cr].append(c);
+            if(cr==0 || cr==n-1){
+                m= !m;
+            }
+            if(m){
+                cr++;
+            }
+            else{
+                cr--;
+            }
+
+        }
+        StringBuilder ans = new StringBuilder();
+        for(StringBuilder s1: sb){
+            ans.append(s1);
+
+        }
+        System.out.print(ans);
+
+    }
+}
