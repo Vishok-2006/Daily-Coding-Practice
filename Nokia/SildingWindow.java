@@ -17,7 +17,19 @@ public class SildingWindow {
     int sum=0;
     int max=Integer.MIN_VALUE;
     int [] sw=new int[k];
-    for(int i=0;)
+    for(int i=0;i<n;i++){
+      
+        for(int j=i;j<sw.length;i++){
+            sum+=csum-arr[i-k] +arr[i];
+        
+        if(max<sum){
+            max=sum;
+            sw[]
+
+        }
+    }
+    }
+    
 
     }
     System.out.println(max);
