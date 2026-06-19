@@ -26,7 +26,7 @@ public class TimeNeedToBuyTickets {
 
 
 
-
+sc.close();
 
 
 
