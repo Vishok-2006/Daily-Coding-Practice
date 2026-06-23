@@ -3,7 +3,7 @@ import java.util.*;
 public class SubSet {
     public static void main(String[] args) {
    
-        int[] num={1,2,3,4};
+        int[] num={1,2,3,};
        
         System.out.println( subsets(num));
 
@@ -26,15 +26,8 @@ public class SubSet {
         return res;
     }
     
-      public List<List<Integer>> subsets(int[] nums){
-        List<List<Integer>> res=new ArrayList<>();
-        List<Integer> temp=new ArrayList<>();
-        res=backrack(nums,res,temp,0);
-        return res;
-      }
-      public List<List<Integer>> backtrack(int[]num , List<List<Integer>> res, List<Integer> temp, start){
-         for
-      }
+     
+     
 
 }
 
