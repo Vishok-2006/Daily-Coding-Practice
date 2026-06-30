@@ -1,22 +1,23 @@
-public class Permutation {
+public class Permutations {
     public static void main(String[] args) {
+    
         String s="ABC";
         
         int fi=0;
         char[] arr=s.toCharArray();
-        Permutations(arr,fi);
+        Permut(arr,fi);
 
 
         
     }
-    static void Permutations(char[] arr,int fi){
+    static void Permut(char[] arr,int fi){
      
         if(fi==arr.length-1){
              System.out.println(arr);
         }
         for(int i=fi;i<arr.length;i++){
             arr= swap(arr,i,fi);
-            Permutations(arr,fi+1);
+            Permut(arr,fi+1);
             arr= swap(arr,i,fi);
             
         }
