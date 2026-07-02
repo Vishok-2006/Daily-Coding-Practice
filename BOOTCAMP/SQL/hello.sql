@@ -1,17 +1,6 @@
--- CREATE TABLE students (
---     student_id INT PRIMARY KEY,
---     first_name VARCHAR(30),
---     last_name VARCHAR(30),
---     gender VARCHAR(10),
---     age INT,
---     department VARCHAR(30),
---     year INT,
---     section CHAR(1),
---     city VARCHAR(30),
---     marks INT,
---     cgpa DECIMAL(3,2),
---     attendance DECIMAL(5,2)
--- );
+
+
+
 
 -- INSERT INTO students VALUES
 -- (101,'Aarav','Sharma','Male',18,'CSE',1,'A','Chennai',89,8.91,95.50),
@@ -46,8 +35,113 @@
 -- (130,'Shreya','D','Female',20,'CSE',3,'A','Chennai',97,9.90,99.50);
 
 
+-- INSERT INTO courses VALUES
+-- (201,101,'Database Management Systems','Dr. Kumar',1,'A',4),
+-- (202,102,'Operating Systems','Dr. Priya',3,'B+',4),
+-- (203,103,'Computer Networks','Dr. Raj',5,'A+',3),
+-- (204,104,'Power Systems','Dr. Meena',7,'A',4),
+-- (205,105,'Java Programming','Dr. Arun',1,'B',3),
+-- (206,106,'Machine Learning','Dr. Kavitha',3,'A+',4),
+-- (207,107,'Cyber Security','Dr. Suresh',5,'A',3),
+-- (208,108,'Thermodynamics','Dr. Naveen',7,'B+',4),
+-- (209,110,'Data Structures','Dr. Kumar',1,'A',4),
+-- (210,111,'Python Programming','Dr. Priya',3,'B',3),
+-- (211,112,'DBMS','Dr. Raj',5,'A',4),
+-- (212,114,'Artificial Intelligence','Dr. Kavitha',1,'A',4),
+-- (213,115,'Cloud Computing','Dr. Arun',3,'A',3),
+-- (214,118,'Software Engineering','Dr. Meena',7,'A+',4),
+-- (215,120,'Web Development','Dr. Suresh',3,'A',3),
+-- (216,121,'Deep Learning','Dr. Kavitha',5,'B+',4),
+-- (217,122,'Embedded Systems','Dr. Raj',7,'A',4),
+-- (218,124,'Linux Administration','Dr. Kumar',1,'B+',3),
+-- (219,126,'Data Mining','Dr. Priya',5,'A+',4),
+-- (220,130,'Compiler Design','Dr. Arun',5,'A+',4);
 
 
+
+
+--=======================================================================
+
+-- CREATE TABLE students (
+--     student_id INT PRIMARY KEY,
+--     first_name VARCHAR(30),
+--     last_name VARCHAR(30),
+--     gender VARCHAR(10),
+--     age INT,
+--     department VARCHAR(30),
+--     year INT,
+--     section CHAR(1),
+--     city VARCHAR(30),
+--     marks INT,
+--     cgpa DECIMAL(3,2),
+--     attendance DECIMAL(5,2)
+-- );
+
+
+-- CREATE TABLE courses (
+--     course_id INT PRIMARY KEY,
+--     student_id INT,
+--     course_name VARCHAR(50),
+--     faculty_name VARCHAR(50),
+--     semester INT,
+--     grade CHAR(2),
+--     credits INT,
+--     FOREIGN KEY (student_id) REFERENCES students(student_id)
+-- );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--==========================================================================
+
+                  --Self Join
+                  
+--============================================================================
+
+
+
+
+
+
+
+
+
+
+--===========================================================================
+
+                     --Left Join
+
+--===========================================================================
+
+select s.first_name , c.faculty_name from courses c left join students s on s.student_id=c.student_id 
+where c.semester>3; 
+
+
+
+--============================================================================
+
+                  --Inner Join
+
+--============================================================================
+
+
+
+-- select s.first_name, c.course_name from courses c inner join students s on c.student_id=s.student_id 
+-- where age>15;
 
 
 
@@ -108,22 +202,20 @@
 --=============================================================
 
 
-select student_id,
-     case
-         when marks >80 
-            and first_name not like 'M%'
-         then marks
-          else 0
-           end  as internal 
-           from  students
+-- select student_id,
+--      case
+--          when marks >80 
+--             and first_name not like 'M%'
+--          then marks
+--           else 0
+--            end  as internal 
+--            from  students
 
- order by student_id;
-
-
+--  order by student_id;
 
 
 
-
+--=============================================================
 
 
 
@@ -133,5 +225,22 @@ select student_id,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--============================================
 
 -- sqlite3 mydatabase.db < hello.sql
+
+--============================================
