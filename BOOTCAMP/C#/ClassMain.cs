@@ -5,9 +5,18 @@ class Program
 {
     static void Main(String[] args)
     {
-       
-       //  Hello.Hellos();
-       StarPattern.Star();
+             ReverseANumber.Reverse();  
+        //     Hello.Hellos();
+
+       //      StarPattern.Star();
+
+      //       OddOrEven.Odd();
+
+     //        LargestThreeNumbers.LargestNumber();
+   
+   //          MultiplicationTable.Multiply();
+
+               
     }
 }
 

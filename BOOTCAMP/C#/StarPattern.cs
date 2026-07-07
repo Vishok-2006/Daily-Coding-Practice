@@ -5,11 +5,11 @@ class StarPattern
         int n=Convert.ToInt32(Console.ReadLine());
         
 
-//                *
-//               **
-//              ***
-//             ****
-//            *****
+//             *
+//            * * 
+//           * * * 
+//          * * * * 
+//         * * * * * 
 
 Console.WriteLine();
 int t =n-1;
