@@ -1,6 +1,5 @@
-class Program
-{
-    static void Main(String[] args)
+class UserInputs{
+    static void UserInput()
     {
        string name=Console.ReadLine()!;
        Console.WriteLine($"This is my Name : {name}");

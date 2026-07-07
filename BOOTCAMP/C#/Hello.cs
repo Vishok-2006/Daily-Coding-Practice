@@ -1,8 +1,7 @@
 
+class Hello{
 
-class Program
-{
-    static void Main()
+   public static void Hellos()
     {
         Console.WriteLine("Hello, Everyone to the worrld of c#");
     }

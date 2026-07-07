@@ -1,7 +1,5 @@
-
-class Program
-{
-    static void Main()
+class ForLoops{
+    static void ForLoop()
     {
         // for(int i = 0; i < 8; i++)
         // {

@@ -1,7 +1,5 @@
-
-class Program
-{
-    static void Main()
+class Variabless {
+    static void Variables()
     {
         int age = 20;
         double height = 5.9;
