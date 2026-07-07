@@ -5,8 +5,11 @@ class Program
 {
     static void Main(String[] args)
     {
-             ReverseANumber.Reverse();  
-        //     Hello.Hellos();
+               ArraysImplementation.ArrayImplementation();
+
+         //    ReverseANumber.Reverse();  
+
+        //     Hello.Hellos(); 
 
        //      StarPattern.Star();
 
