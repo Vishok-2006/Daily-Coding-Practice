@@ -5,9 +5,9 @@ class Program
 {
     static void Main(String[] args)
     {  
+                  CopingArray.Coping();
              
-             
-                   CaseCount.Count();
+            //       CaseCount.Count();
 
         //           JaggedArray.Jagged();
  
