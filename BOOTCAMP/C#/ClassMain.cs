@@ -4,12 +4,18 @@ using System.Net.Security;
 class Program
 {
     static void Main(String[] args)
-    {
-               ArraysImplementation.ArrayImplementation();
+    {  
+                  JaggedArray.Jagged();
 
-         //    ReverseANumber.Reverse();  
+          //     ArrayPractice.ArrayPractices();
 
-        //     Hello.Hellos(); 
+         //   MultiDimesionalArray.DimesionalArray();
+        
+        //     FileRead.Reader();
+
+        //     ReverseANumber.Reverse();  
+        
+        //      Hello.Hellos();
 
        //      StarPattern.Star();
 

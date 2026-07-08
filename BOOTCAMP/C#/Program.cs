@@ -3,7 +3,8 @@
     
 
 static void Program()
-{
-    Console.WriteLine("Hello, World!");
+{   
+    int n=Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine();
 }
 }
