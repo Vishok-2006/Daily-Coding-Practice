@@ -5,25 +5,29 @@ class Program
 {
     static void Main(String[] args)
     {  
-                  JaggedArray.Jagged();
+             
+             
+                   CaseCount.Count();
 
-          //     ArrayPractice.ArrayPractices();
+        //           JaggedArray.Jagged();
+ 
+          //         ArrayPractice.ArrayPractices();
 
-         //   MultiDimesionalArray.DimesionalArray();
+         //          MultiDimesionalArray.DimesionalArray();
         
-        //     FileRead.Reader();
+        //           FileRead.Reader();
 
-        //     ReverseANumber.Reverse();  
+        //          ReverseANumber.Reverse();  
         
-        //      Hello.Hellos();
+        //          Hello.Hellos();
 
-       //      StarPattern.Star();
+       //           StarPattern.Star();
 
-      //       OddOrEven.Odd();
+      //            OddOrEven.Odd();
 
-     //        LargestThreeNumbers.LargestNumber();
+     //             LargestThreeNumbers.LargestNumber();
    
-   //          MultiplicationTable.Multiply();
+   //              MultiplicationTable.Multiply();
 
                
     }
