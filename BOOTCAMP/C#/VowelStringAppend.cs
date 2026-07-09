@@ -1,6 +1,7 @@
 using System.Text;
 class VowelString{
-    public static string Vowels( string[] str){
+    public static string Vowels( ){
+                  string[] str={"Apple","orange","mango"};
                   StringBuilder sb=new StringBuilder();
                   string s="aeiouAEIUO";
                   foreach(String i in str){
@@ -8,6 +9,6 @@ class VowelString{
                        if(s.Contains(i[0].ToString()) && s.Contains(i[l].ToString())) sb.Append(i);
                   }
                   if(sb.ToString().Length ==0) return "no matches found";
-                  return sb.ToString().ToLower();
+                    Console.WriteLine( sb.ToString().ToLower());
     }
 }
