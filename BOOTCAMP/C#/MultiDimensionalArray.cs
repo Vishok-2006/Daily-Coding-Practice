@@ -1,6 +1,6 @@
-class MultiDimesionalArray
+class MultiDimensionalArray
 {
-    public static void DimesionalArray()
+    public static void DimensionalArray()
     {
         int r=Convert.ToInt32(Console.ReadLine());
         int c=Convert.ToInt32(Console.ReadLine());
