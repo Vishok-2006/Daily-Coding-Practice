@@ -4,8 +4,13 @@ using System.Net.Security;
 class Program
 {
     static void Main(String[] args)
-    {            
-                      
+    {         
+                       
+                     IndividualSum.Individual();
+
+
+            //         FindKey.findK();
+
               //       VowelString.Vowels();
                   
                //     PrimeCount.Prime();      
@@ -24,7 +29,7 @@ class Program
  
           //         ArrayPractice.ArrayPractices();
 
-                   MultiDimensionalArray.DimensionalArray();
+         //          MultiDimensionalArray.DimensionalArray();
         
         //           FileRead.Reader();
 
