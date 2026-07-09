@@ -4,8 +4,19 @@ using System.Net.Security;
 class Program
 {
     static void Main(String[] args)
-    {  
-                  CopingArray.Coping();
+    {            
+
+                      
+
+               //     PrimeCount.Prime();      
+
+              //     FibonacciSeries.Series();
+                     
+            //       UniqueDigitCount.Unique();
+                   
+              //     CharacterIncrimination.Incrimination();
+
+              //     CopingArray.Coping();
              
             //       CaseCount.Count();
 
@@ -17,9 +28,9 @@ class Program
         
         //           FileRead.Reader();
 
-        //          ReverseANumber.Reverse();  
+        //           ReverseANumber.Reverse();  
         
-        //          Hello.Hellos();
+        //           Hello.Hellos();
 
        //           StarPattern.Star();
 
@@ -27,7 +38,7 @@ class Program
 
      //             LargestThreeNumbers.LargestNumber();
    
-   //              MultiplicationTable.Multiply();
+   //               MultiplicationTable.Multiply();
 
                
     }
