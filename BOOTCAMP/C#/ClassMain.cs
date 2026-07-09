@@ -24,7 +24,7 @@ class Program
  
           //         ArrayPractice.ArrayPractices();
 
-         //          MultiDimesionalArray.DimesionalArray();
+         //          MultiDimensionalArray.DimensionalArray();
         
         //           FileRead.Reader();
 
