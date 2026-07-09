@@ -1,5 +1,5 @@
 using System.Text;
-
+ 
 class IndividualSum
 {
     public static void Individual()

@@ -5,7 +5,7 @@ class Program
 {
     static void Main(String[] args)
     {         
-                       
+                        
                      IndividualSum.Individual();
 
 
