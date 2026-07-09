@@ -5,9 +5,9 @@ class Program
 {
     static void Main(String[] args)
     {            
-
-                      
-
+                      string[] arr={"Apple","orange","amango"};
+                     string s= VowelString.Vowels(arr);
+                    Console.WriteLine(s);
                //     PrimeCount.Prime();      
 
               //     FibonacciSeries.Series();
