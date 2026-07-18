@@ -1,23 +1,26 @@
 using System.ComponentModel.Design;
 using System.Net.Security;
+using System.Collections;
 
 class Program
 {
     static void Main(String[] args)
-    {         
-                        
-                     IndividualSum.Individual();
+    {          
+
+                       ArrayListDemo.Listed();
+
+           //          IndividualSum.Individual();
 
 
             //         FindKey.findK();
 
               //       VowelString.Vowels();
                   
-               //     PrimeCount.Prime();      
+               //      PrimeCount.Prime();      
 
-              //     FibonacciSeries.Series();
+              //       FibonacciSeries.Series();
                      
-            //       UniqueDigitCount.Unique();
+            //         UniqueDigitCount.Unique();
                    
               //     CharacterIncrimination.Incrimination();
 
