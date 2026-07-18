@@ -29,6 +29,6 @@ public class ZigZag {
 
         }
         System.out.print(ans);
-
+ sc.close();
     }
 }

@@ -1,3 +1,5 @@
+package Studies;
+
 import java.util.*;
 
 public class MatrixMultiplication{
@@ -30,6 +32,6 @@ public class MatrixMultiplication{
     }
     Arrays.sort(arr);
         System.out.println(arr[k-1]);
-
+ sc.close();
     }
 }

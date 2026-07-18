@@ -5,8 +5,8 @@ public class SelfDestructiveNumber {
 
 
         String str=sc.nextLine();
-        boolean t=true;
-  
+    //    boolean t=true;
+   sc.close();
             int n=Integer.parseInt(str);
      
 

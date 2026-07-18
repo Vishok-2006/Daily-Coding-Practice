@@ -6,6 +6,7 @@ public class NQueens {
         List<List<String>> res=new ArrayList<>();
         res= solveNQueens(n);
         System.out.println(res);
+         sc.close();
     }
 
     static void nQueens(char board[][] , int row , int n , List<List<String>> res ){

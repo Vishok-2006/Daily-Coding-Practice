@@ -1,10 +1,14 @@
 public class RemoveLinkedListElements {
+     
+ ListNode head=null;
     
-
+    public static void main(String[] args){
+       
+    }
     public ListNode removeElements(ListNode head, int val) {
 
         //Iterative
-          ListNode temp = new ListNode(-1);
+        ListNode temp = new ListNode(-1);
         temp.next = head;
         ListNode cur = temp;
         while(cur.next != null){
@@ -15,12 +19,14 @@ public class RemoveLinkedListElements {
             }
         }
         return temp.next;
-
-        //recursive
-        if(head == null) return null;
-        head.next = removeElements(head.next,val);
-        return head.val == val ? head.next:head;
     }
 }
       
-
+class ListNode{
+    int val;
+    ListNode next;
+    public ListNode(int val){
+        this.val=val;
+        this.next=null;
+    }
+}

@@ -160,4 +160,3 @@ public static void main(String[] args) {
 // System.out.print(list.getNthnode(list.head,2).data);
 }
 }
-}

@@ -1,3 +1,5 @@
+package Studies;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -9,6 +11,7 @@ public class ValidAnagram {
         String t=sc.nextLine();
         boolean b=isAnagram(s,t);
         System.out.print(b);
+        sc.close();
     }
     
     public static boolean isAnagram(String s, String t) {

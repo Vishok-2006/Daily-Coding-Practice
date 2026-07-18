@@ -1,3 +1,6 @@
+package Studies;
+
+
 import java.util.Scanner;
 
 public class MinimumSizeSubarray {
@@ -10,6 +13,7 @@ public class MinimumSizeSubarray {
         }
         int n=minSubArrayLen(t,arr);
         System.out.println(n);
+        sc.close();
     }
 
     public static int minSubArrayLen(int t, int[] arr) {

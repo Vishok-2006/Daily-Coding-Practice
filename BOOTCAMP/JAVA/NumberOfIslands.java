@@ -23,8 +23,7 @@ public class NumberOfIslands {
         }
     }    
     return count;
-    }  s.add(10);
-
+    }  
 
 
 
@@ -45,6 +44,6 @@ public class NumberOfIslands {
 
 
     }
-    
-}
+}    
+
 

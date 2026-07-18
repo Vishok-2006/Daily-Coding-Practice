@@ -7,6 +7,6 @@ public class StringReplace {
     int count= (s.length() - s.replaceAll(sub, "").length())/sub.length();
     System.out.println(count);
     System.out.println(s.replaceAll(sub, ""));
-    
+     sc.close();
 }    
 }

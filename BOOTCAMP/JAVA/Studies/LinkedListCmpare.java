@@ -1,4 +1,4 @@
-
+package Studies;
 import java.util.*;
 
 
@@ -15,7 +15,7 @@ public class LinkedListCmpare{
             
              if(i==t){
                 t+=2;
-                int a=sc.nextInt();
+               
                 continue;
              }
              l1.add(sc.nextInt());
@@ -38,5 +38,6 @@ public class LinkedListCmpare{
                 System.out.print(l2.get(i)+" ");
             }
         }
+        sc.close();
     }
 }

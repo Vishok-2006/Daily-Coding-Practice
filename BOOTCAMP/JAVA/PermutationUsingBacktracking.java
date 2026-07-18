@@ -1,10 +1,12 @@
+import java.util.*;
+
 public class PermutationUsingBacktracking {
     
-}
 
 
 
-LC 78
+
+ // LC 78
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
@@ -25,8 +27,8 @@ class Solution {
         }
 }
 
-LC 46
-class Solution {
+   // LC 46
+class Solution1 {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
          getperms(nums,0,res);
@@ -58,8 +60,8 @@ class Solution {
             nums[i] = temp;
         }
     }
-    lc 39
-    class Solution {
+   // lc 39
+    class Solution2 {
     public List<List<Integer>> combinationSum(int[] arr, int target) {
     List<List<Integer>> ans = new ArrayList<>();
     List<Integer> comb = new ArrayList<>();
@@ -94,4 +96,6 @@ class Solution {
     backtrack(arr, ans, comb , i+1, target);
 
     }
+}
+
 }

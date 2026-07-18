@@ -1,3 +1,16 @@
+class ListNode{
+    int data;
+    ListNode next;
+    public ListNode(int val){
+        this.data=val;
+        this.next=null;
+    }
+}
+
+
+
+
+
 public class PalindromeLinkedList {
     public static void main(String[] args) {
         
@@ -15,7 +28,7 @@ public class PalindromeLinkedList {
     slow = reversed(slow);
     fast = head;
     while(slow!=null){
-        if(slow.val != fast.val){
+        if(slow.data != fast.data){
             return false;
         }
         slow = slow.next;

@@ -8,6 +8,7 @@ public class BeautifulSubString {
         String s=sc.nextLine();
         int n=s.length();
         int count=0;
+         sc.close();
         for(int i=0;i<n;i++){
             Map<Character,Integer> m=new HashMap<>();
             Set<Character> st=new HashSet<>();

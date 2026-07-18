@@ -9,6 +9,7 @@ public class LicenseKeyFormatting {
         int  k=sc.nextInt();
         // String[] arr=s.split("-");
         StringBuilder sb=new StringBuilder();
+        sc.close();
         // StringBuilder str=new StringBuilder();
         
         // for(String i:arr){

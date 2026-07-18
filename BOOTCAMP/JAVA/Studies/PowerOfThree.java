@@ -1,3 +1,6 @@
+package Studies;
+
+
 class Solution {
    
     public boolean isPowerOfThree(int n) {

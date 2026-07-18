@@ -1,3 +1,6 @@
+package Studies;
+
+
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -9,6 +12,7 @@ public class Isisomaorphic {
         String t=sc.nextLine();
         boolean b=isIsomorphic(s,t);
         System.out.print(b);
+        sc.close();
     }
    
     public static boolean isIsomorphic(String s, String t) {

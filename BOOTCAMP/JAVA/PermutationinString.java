@@ -7,6 +7,7 @@ class PermutationinString {
         String s2=sc.nextLine();
         boolean t=checkInclusion(s1, s2);
         System.out.println(t);
+         sc.close();
     }
    
     public static boolean checkInclusion(String s1, String s2) {

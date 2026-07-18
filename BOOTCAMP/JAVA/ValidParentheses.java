@@ -4,7 +4,7 @@ public class ValidParentheses{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         String s=sc.next();
-       
+        sc.close();
         Stack<Character> res=new Stack<>();
         for(char c: s.toCharArray()){
             if(c=='('|| c=='['  || c=='{'){
@@ -26,6 +26,6 @@ public class ValidParentheses{
         
     }
     System.out.println(res.isEmpty());
-    sc.close();
+   
 }
 }
