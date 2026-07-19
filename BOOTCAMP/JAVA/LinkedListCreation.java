@@ -1,7 +1,7 @@
 import java.util.*;
 class Node{
     int data;
-    Node next;
+   Node next;
     public Node(int val){
         this.data=val;
         this.next=null;
@@ -12,7 +12,7 @@ public class LinkedListCreation {
         Scanner sc=new Scanner(System.in);
          int n=sc.nextInt();
          Node head=null;
-         Node tail=null;
+        Node tail=null;
         for(int i=0;i<n;i++){
             int x=sc.nextInt();
             Node d=new Node(x);
