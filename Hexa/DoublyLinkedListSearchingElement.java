@@ -48,6 +48,7 @@ public class DoublyLinkedListSearchingElement {
 //====================================================================================
             System.out.println("Enter the element need to be Searched:");
             int x=s.nextInt(); 
+             s.close();
             Node cur=head;
              while(cur!=null){
                 if(cur.data==x){
@@ -58,7 +59,7 @@ public class DoublyLinkedListSearchingElement {
              }
              System.out.print("Element is not Present in the list:");
 
-              s.close();
+             
 
 } 
 }
