@@ -1,6 +1,7 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "cSpell.words": [
+        "Doublylinked",
         "Elementin",
         "inorder",
         "trav"
