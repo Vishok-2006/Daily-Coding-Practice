@@ -10,13 +10,14 @@ class Node{
     }
 }
 
-public class InsertingElementInTheSpecificPosition {
+
+public class UpdatingTheElementInTheDoublyLinkedList {
      public static void main(String[] args) {
         
     
-      Scanner s =new Scanner(System.in);
+      Scanner sc =new Scanner(System.in);
         System.out.println("Insert the no of values need to be added");
-        int n=s.nextInt();
+        int n=sc.nextInt();
         System.out.println("Enter the elements:");
 
 //===================================================================================
@@ -26,10 +27,11 @@ public class InsertingElementInTheSpecificPosition {
 
 
 //=====================================================================================
+
         Node head=null;
         Node tail=null;
         for(int i=0;i<n;i++){
-            Node no=new Node(s.nextInt());
+            Node no=new Node(sc.nextInt());
             if(head==null){
                 head=no;
                 tail=no;
@@ -40,38 +42,36 @@ public class InsertingElementInTheSpecificPosition {
                 tail=no;
             }
         }
+//================================================================================
 
-//====================================================================================
-
-
-//                        INSERTING AT THE SPECIFIC POSITION :
-
-
-//======================================================================================
-
-          System.out.println("Enter the position:");
-          int p=s.nextInt();
-          System.out.println("Enter the data:");
-          Node ele=new Node(s.nextInt());
-          Node temp=head;
-          for(int i=1;i<p-1;i++){
-                 temp=temp.next;
-          }
-          ele.next=temp.next;
-          ele.prev=temp;
-           if(temp.next!=null)  temp.next.prev=ele;
-          temp.next=ele;
-         
-
-          
-//======================================================================================
+              System.out.println("Enter the element need to change:");
+              int x=sc.nextInt();
+              System.out.println("Enter the alternate value:");
+              int c=sc.nextInt();
+              Node curt=head;
+              while(curt!=null){
+                   if(curt.data==x){
+                       curt.data=c;
+                   }
+                   curt=curt.next;
+              }
 
 
 
 
 
-              s.close();
+
+
+
+
+
+//===============================================================================
+
+//                PRINTING SECTION
+
+//===============================================================================
           Node cur=head;
+          sc.close();
              while(cur!=null){
                   if(cur.next==null){
                     System.out.println(cur.data);
@@ -84,10 +84,7 @@ public class InsertingElementInTheSpecificPosition {
              }
 
 
-          
+            
 
-
-
-
-    }
+}
 }

@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 
@@ -10,13 +11,16 @@ class Node{
     }
 }
 
-public class InsertingElementInTheSpecificPosition {
+
+public class ReversingTheDoublyLinkedList {
+    
+
      public static void main(String[] args) {
         
     
-      Scanner s =new Scanner(System.in);
+      Scanner sc =new Scanner(System.in);
         System.out.println("Insert the no of values need to be added");
-        int n=s.nextInt();
+        int n=sc.nextInt();
         System.out.println("Enter the elements:");
 
 //===================================================================================
@@ -26,10 +30,11 @@ public class InsertingElementInTheSpecificPosition {
 
 
 //=====================================================================================
+
         Node head=null;
         Node tail=null;
         for(int i=0;i<n;i++){
-            Node no=new Node(s.nextInt());
+            Node no=new Node(sc.nextInt());
             if(head==null){
                 head=no;
                 tail=no;
@@ -41,53 +46,30 @@ public class InsertingElementInTheSpecificPosition {
             }
         }
 
-//====================================================================================
 
+//===============================================================================
 
-//                        INSERTING AT THE SPECIFIC POSITION :
+//                PRINTING IN REVERSE SECTION :
 
-
-//======================================================================================
-
-          System.out.println("Enter the position:");
-          int p=s.nextInt();
-          System.out.println("Enter the data:");
-          Node ele=new Node(s.nextInt());
-          Node temp=head;
-          for(int i=1;i<p-1;i++){
-                 temp=temp.next;
-          }
-          ele.next=temp.next;
-          ele.prev=temp;
-           if(temp.next!=null)  temp.next.prev=ele;
-          temp.next=ele;
-         
-
-          
-//======================================================================================
-
-
-
-
-
-              s.close();
+//===============================================================================
           Node cur=head;
+          sc.close();
+          while(cur.next!=null){
+            cur=cur.next;
+          }
              while(cur!=null){
-                  if(cur.next==null){
+                  if(cur==head){
                     System.out.println(cur.data);
                     return;
                   }
                     System.out.print(cur.data+" <----> ");
                 
                 
-                cur=cur.next;
+                cur=cur.prev;
              }
 
 
-          
+            
 
-
-
-
-    }
+}
 }
