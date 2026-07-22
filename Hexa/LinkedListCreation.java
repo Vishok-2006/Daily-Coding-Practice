@@ -4,13 +4,21 @@ class Node{
    Node next;
     public Node(int val){
         this.data=val;
-        this.next=null;
+    
     }
 }
 public class LinkedListCreation {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
          int n=sc.nextInt();
+
+//================================================================================         
+
+
+//                     INPUT SECTION :
+
+
+//=================================================================================         
          Node head=null;
         Node tail=null;
         for(int i=0;i<n;i++){
@@ -25,7 +33,13 @@ public class LinkedListCreation {
                 tail=tail.next;
             }
         }
-       
+  //===============================================================================     
+
+
+//                        PRINTING SECTION :
+
+
+//==================================================================================        
          Node temp=head;
          while(temp!=null){
             if(temp.next==null){ 

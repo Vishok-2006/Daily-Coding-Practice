@@ -1,0 +1,91 @@
+import java.util.*;
+
+
+class Node{
+    int data;
+    Node next;
+
+    public Node(int val){
+         this.data=val;
+    }
+}
+public class RemovingDuplicatesFromTheList {
+     public static void main(String[] args) {
+
+
+      Scanner sc =new Scanner(System.in);
+        System.out.println("Insert the no of values need to be added");
+        int n=sc.nextInt();
+        System.out.println("Enter the elements:");
+
+//===================================================================================
+
+
+//                          GETTING ELEMENT AS INPUT :
+
+
+//=====================================================================================
+        Node head=null;
+        Node tail=null;
+       for(int i=0;i<n;i++){
+            int x=sc.nextInt();
+            Node d=new Node(x);
+            if(head ==null){
+                head=d;
+                tail=d;
+            }
+            else{
+                tail.next=d;
+                tail=tail.next;
+            }
+        }
+//===============================================================
+
+//                REMOVING THE DUPLICATE NODE :
+
+//================================================================
+             
+             Node t=head;
+             while(t!=null&& t.next!=null){
+                if(t.data==t.next.data){
+                   
+                    t.next =t.next.next;
+                    
+                }
+                else {
+                 
+                    t=t.next;
+                }
+               
+
+             }
+
+
+//==============================================================================
+
+
+//                   Printing Section :
+
+
+//===============================================================================
+
+
+          
+             Node cur=head;
+             sc.close();
+             while(cur!=null){
+                  if(cur.next==null){
+                    System.out.println(cur.data);
+                    return;
+                  }
+                    System.out.print(cur.data+" -> ");
+                
+                
+                cur=cur.next;
+             }
+
+
+            
+
+}
+}
