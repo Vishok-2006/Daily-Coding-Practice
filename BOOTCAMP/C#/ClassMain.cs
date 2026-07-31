@@ -5,6 +5,7 @@ using System.Collections;
 class Program
 {
     static void Main(String[] args)
+<<<<<<< HEAD
     {          
 
                        ArrayListDemo.Listed();
@@ -23,6 +24,11 @@ class Program
             //         UniqueDigitCount.Unique();
                    
               //     CharacterIncrimination.Incrimination();
+=======
+    {  
+                     
+
+>>>>>>> 22aa830 (24)
 
               //     CopingArray.Coping();
              
