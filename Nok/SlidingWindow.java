@@ -1,8 +1,8 @@
-package Nokia;
+package Nok;
 
 import java.util.Scanner;
 
-public class SildingWindow {
+public class SlidingWindow {
     public static void main(String[] args) {
         
     
@@ -16,22 +16,22 @@ public class SildingWindow {
     }
     int sum=0;
     int max=Integer.MIN_VALUE;
-    int [] sw=new int[k];
-    for(int i=0;i<n;i++){
-      
-        for(int j=i;j<sw.length;i++){
-            sum+=csum-arr[i-k] +arr[i];
-        
-        if(max<sum){
-            max=sum;
-            sw[]
 
+    if (n >= k) {
+        for (int i = 0; i < k; i++) {
+            sum += arr[i];
+        }
+        max = sum;
+
+        for (int i = k; i < n; i++) {
+            sum += arr[i] - arr[i - k];
+            if (sum > max) {
+                max = sum;
+            }
         }
     }
-    }
-    
 
-    }
     System.out.println(max);
+    sc.close();
 }
 }

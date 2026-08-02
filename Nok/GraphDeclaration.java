@@ -1,6 +1,6 @@
-package Nokia;
+package Nok;
 import java.util.*;
-public class GraphDecleration {
+public class GraphDeclaration {
     public static void main(String[] args) {
         int V = 5;
 
